@@ -1,0 +1,12 @@
+Hey, can we move tomorrow's meeting to 3 PM? Something came up this morning.
+The training run diverged after about 40,000 steps, so I lowered the learning rate and restarted it from the last checkpoint.
+Please review the pull request when you have a moment; I refactored the audio capture and added tests.
+I'm flying to Helsinki on Friday and coming back on Sunday evening.
+The new model runs entirely on the Neural Engine, so it doesn't slow down while the GPU is busy.
+Let's use PyTorch for the prototype and port it to MLX once the architecture is stable.
+Could you send me the Kubernetes config and the API keys for the staging environment?
+Honestly, I think the second approach is simpler, but the first one is probably faster.
+Remind me to buy milk, eggs, coffee, and a birthday card for my sister.
+Quarterly revenue grew by 12% compared to last year, mostly thanks to enterprise customers.
+We should benchmark Parakeet against Whisper and Cohere Transcribe on real dictation, not just audiobooks.
+Thanks for the quick reply! I'll take a look at it tonight and get back to you tomorrow.

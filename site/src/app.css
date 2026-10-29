@@ -1,0 +1,206 @@
+/* The page, and the colours of the macOS replica (.mac) in each appearance. */
+
+:root {
+    color-scheme: light dark;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --bg: #fbfbfa;
+    --surface: #ffffff;
+    --text: #111111;
+    --text-2: #55554f;
+    --text-3: #8a8983;
+    --line: #e5e4de;
+    --link: #1f6fd6;
+    --code-bg: #f1f0ec;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 30px rgb(0 0 0 / 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0e0e0d;
+        --surface: #181817;
+        --text: #f0efec;
+        --text-2: #b9b8b0;
+        --text-3: #85847e;
+        --line: #2a2a28;
+        --link: #5aa2f5;
+        --code-bg: #1d1d1b;
+        --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 30px rgb(0 0 0 / 0.35);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    font-family: var(--mono);
+    font-size: 0.9em;
+    background: var(--code-bg);
+    padding: 0.1em 0.35em;
+    border-radius: 5px;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+}
+
+/* macOS replica ---------------------------------------------------------------------------------- */
+
+.mac {
+    font-family: var(--font);
+    font-size: 13px;
+    line-height: 1.25;
+    letter-spacing: -0.003em;
+    color: var(--label);
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    --accent: #2f6fe8;
+    --red: #ff453a;
+}
+
+.mac.light {
+    color-scheme: light;
+    --label: rgb(0 0 0 / 0.85);
+    --label-2: rgb(0 0 0 / 0.5);
+    --label-3: rgb(0 0 0 / 0.26);
+    --fill: rgb(0 0 0 / 0.05);
+    --fill-2: rgb(0 0 0 / 0.08);
+    --fill-3: rgb(0 0 0 / 0.1);
+    --divider: rgb(0 0 0 / 0.08);
+    --window-sidebar: rgb(226 227 225 / 0.88);
+    --window-page: rgb(238 238 237 / 0.96);
+    --page-tint: rgb(255 255 255 / 0.4);
+    --card: rgb(250 250 249 / 0.96);
+    --card-edge: rgb(0 0 0 / 0.07);
+    --card-shine: rgb(255 255 255 / 0.9);
+    --card-shadow: 0 1px 3px rgb(0 0 0 / 0.07), 0 6px 18px rgb(0 0 0 / 0.04);
+    --glass: rgb(255 255 255 / 0.62);
+    --glass-edge: rgb(0 0 0 / 0.09);
+    --window-edge: rgb(0 0 0 / 0.18);
+    --field: rgb(255 255 255 / 0.45);
+    --menu: rgb(246 246 245 / 0.82);
+    --menu-text: rgb(0 0 0 / 0.85);
+    --switch-off: rgb(0 0 0 / 0.1);
+    --knob: #ffffff;
+    --popup: rgb(0 0 0 / 0.085);
+    --control: rgb(255 255 255);
+    --control-edge: rgb(0 0 0 / 0.12);
+    --menubar: rgb(255 255 255 / 0.32);
+    --menubar-text: rgb(0 0 0 / 0.88);
+    --app-bg: rgb(252 252 251);
+    --wall-base: #b9c9ef;
+    --wall-1: #7aa2f2;
+    --wall-2: #e8d6f4;
+    --wall-3: #a7c7f6;
+}
+
+.mac.dark {
+    color-scheme: dark;
+    --label: rgb(255 255 255 / 0.88);
+    --label-2: rgb(255 255 255 / 0.55);
+    --label-3: rgb(255 255 255 / 0.25);
+    --fill: rgb(255 255 255 / 0.05);
+    --fill-2: rgb(255 255 255 / 0.08);
+    --fill-3: rgb(255 255 255 / 0.1);
+    --divider: rgb(255 255 255 / 0.08);
+    --window-sidebar: rgb(72 72 70 / 0.9);
+    --window-page: rgb(55 55 54 / 0.96);
+    --page-tint: rgb(30 30 30 / 0.4);
+    --card: rgb(76 76 75 / 0.94);
+    --card-edge: rgb(255 255 255 / 0.07);
+    --card-shine: rgb(255 255 255 / 0.12);
+    --card-shadow: 0 1px 3px rgb(0 0 0 / 0.25), 0 6px 18px rgb(0 0 0 / 0.12);
+    --glass: rgb(255 255 255 / 0.1);
+    --glass-edge: rgb(255 255 255 / 0.1);
+    --window-edge: rgb(0 0 0 / 0.6);
+    --field: rgb(30 30 30 / 0.45);
+    --menu: rgb(40 40 40 / 0.78);
+    --menu-text: rgb(255 255 255 / 0.88);
+    --switch-off: rgb(255 255 255 / 0.14);
+    --knob: #e4e4e4;
+    --popup: rgb(255 255 255 / 0.13);
+    --control: rgb(255 255 255 / 0.16);
+    --control-edge: rgb(255 255 255 / 0.08);
+    --menubar: rgb(0 0 0 / 0.28);
+    --menubar-text: rgb(255 255 255 / 0.92);
+    --app-bg: rgb(32 32 31);
+    --wall-base: #141a3c;
+    --wall-1: #2f3fa8;
+    --wall-2: #3b2366;
+    --wall-3: #1d3d7a;
+    --accent: #3a7af7;
+}
+
+.mac button {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+.mac input,
+.mac textarea {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+/* A push button as macOS draws it in a form: a small rounded rect. */
+.mac .push {
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: var(--control);
+    box-shadow:
+        0 0 0 0.5px var(--control-edge),
+        0 0.5px 1.5px rgb(0 0 0 / 0.12);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.mac .push:active {
+    filter: brightness(0.92);
+}
+
+.mac .push:disabled {
+    opacity: 0.45;
+}
+
+.mac.dark .push:active {
+    filter: brightness(1.25);
+}
+
+.mac .secondary {
+    color: var(--label-2);
+}
